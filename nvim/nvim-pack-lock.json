@@ -47,6 +47,10 @@
       "src": "https://github.com/ThePrimeagen/harpoon",
       "version": "'harpoon2'"
     },
+    "inlay-hint-trim.nvim": {
+      "rev": "febf997521539d53f8c1dc71622ce23d9e563fd1",
+      "src": "https://github.com/Ray-D-Song/inlay-hint-trim.nvim"
+    },
     "lualine.nvim": {
       "rev": "221ce6b2d999187044529f49da6554a92f740a96",
       "src": "https://github.com/nvim-lualine/lualine.nvim"
@@ -70,6 +74,10 @@
     "mini.ai": {
       "rev": "25248c6aa002391936a6200f12d1466015987133",
       "src": "https://github.com/nvim-mini/mini.ai"
+    },
+    "neocursor.nvim": {
+      "rev": "f820c654b7c99c51f1700e956b9eedfb1d73a56b",
+      "src": "https://github.com/teocns/neocursor.nvim"
     },
     "neotest": {
       "rev": "27bf921498043f7ecd821d6db68d05de244bbd02",

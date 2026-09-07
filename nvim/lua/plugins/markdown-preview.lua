@@ -1,6 +1,4 @@
-local utils = require("utils")
-
-utils.update_handler("markdown-preview.nvim", { "npm", "install", "--prefix", "app" })
+require("utils").update_handler("markdown-preview.nvim", { "npm", "install", "--prefix", "app" })
 
 vim.g.mkdp_auto_close = 0
 vim.pack.add({ "https://github.com/iamcco/markdown-preview.nvim" })

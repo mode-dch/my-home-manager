@@ -10,8 +10,8 @@ require("lualine").setup({
 		lualine_c = {
             -- stylua: ignore
 			{
-				"project", format = "name", no_project = nil, separator = " ", enclose_pair = nil, 
-                color = function() return { fg = Snacks.util.color("Directory") } end 
+				"project", format = "name", no_project = nil, separator = " ", enclose_pair = nil,
+                color = function() return { fg = Snacks.util.color("Directory") } end
             },
             -- stylua: ignore
 			{ "diagnostics", symbols = { error = " ", warn = " ", info = " ", hint = " " } },
@@ -19,10 +19,10 @@ require("lualine").setup({
             -- stylua: ignore
 			{ "filename", path = 1, separator = "", color = function() return { fg = Snacks.util.color("Normal") } end },
             -- stylua: ignore
-			{ 
-                function() return vim.b.gitsigns_blame_line or "" end, 
-                cond = function() return vim.b.gitsigns_blame_line ~= nil end, 
-                color = function() return { fg = Snacks.util.color("Comment") } end, 
+			{
+                function() return vim.b.gitsigns_blame_line or "" end,
+                cond = function() return vim.b.gitsigns_blame_line ~= nil end,
+                color = function() return { fg = Snacks.util.color("Comment") } end,
                 padding = { left = 1, right = 0 },
             },
 		},

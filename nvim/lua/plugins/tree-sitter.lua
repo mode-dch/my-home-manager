@@ -1,6 +1,4 @@
-local utils = require("utils")
-
-utils.update_handler("nvim-treesitter", function()
+require("utils").update_handler("nvim-treesitter", function()
 	vim.cmd("TSUpdate")
 end)
 

@@ -1,6 +1,4 @@
-local utils = require("utils")
-
-utils.update_handler("LuaSnip", { "make", "install_jsregexp" })
+require("utils").update_handler("LuaSnip", { "make", "install_jsregexp" })
 
 vim.pack.add({
 	{ src = "https://github.com/L3MON4D3/LuaSnip", version = vim.version.range("2.*") },
