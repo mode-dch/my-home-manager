@@ -68,7 +68,6 @@ in
       nixfmt
       google-cloud-sdk
       ffmpeg
-      pnpm
       pulumi
       pulumiPackages.pulumi-nodejs
       claude-code

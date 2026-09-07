@@ -7,7 +7,7 @@ vim.pack.add({ "https://github.com/mfussenegger/nvim-dap-python" })
 require("dap-view").setup({
 	auto_toggle = true,
 })
-require("dap-python").setup("debugpy-adapter")
+require("dap-python").setup("uv")
 
 local dap = require("dap")
 
