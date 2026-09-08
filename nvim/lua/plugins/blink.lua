@@ -14,6 +14,8 @@ require("blink.cmp").setup({
 		preset = "enter",
 		["<C-l>"] = { "show", "show_documentation", "hide_documentation" },
 		["<C-y>"] = { "select_and_accept" },
+		["<C-u>"] = { "scroll_signature_up", "fallback" },
+		["<C-d>"] = { "scroll_signature_down", "fallback" },
 	},
 
 	completion = {
@@ -29,6 +31,13 @@ require("blink.cmp").setup({
 		},
 		documentation = { auto_show = true, auto_show_delay_ms = 200 },
 		ghost_text = { enabled = true },
+	},
+
+	signature = {
+		enabled = true,
+		window = {
+			show_documentation = true,
+		},
 	},
 
 	sources = {

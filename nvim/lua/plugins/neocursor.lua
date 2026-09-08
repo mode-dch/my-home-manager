@@ -13,6 +13,8 @@ vim.pack.add({ "https://github.com/teocns/neocursor.nvim" })
 vim.api.nvim_create_autocmd("InsertEnter", {
 	once = true,
 	callback = function()
-		require("neocursor").setup({})
+		require("neocursor").setup({
+			show_hints = false,
+		})
 	end,
 })

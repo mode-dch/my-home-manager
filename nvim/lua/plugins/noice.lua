@@ -26,6 +26,13 @@ require("noice").setup({
 			},
 			view = "mini",
 		},
+		{
+			filter = {
+				event = "notify",
+				find = "neocursor ready",
+			},
+			opts = { skip = true },
+		},
 	},
 	presets = {
 		bottom_search = true,
