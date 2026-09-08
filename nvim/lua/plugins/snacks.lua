@@ -18,8 +18,6 @@ require("snacks").setup({
 	picker = {
 		sources = {
 			files = {
-				hidden = true,
-				ignored = true,
 				win = {
 					input = {
 						keys = {
@@ -49,8 +47,6 @@ require("snacks").setup({
 				},
 			},
 			grep = {
-				hidden = true,
-				ignored = true,
 				win = {
 					input = {
 						keys = {
@@ -84,18 +80,8 @@ require("snacks").setup({
 			},
 			grep_buffers = {},
 			explorer = {
-				supports_live = true,
 				auto_close = true,
-				diagnostics = true,
-				diagnostics_open = false,
-				focus = "list",
-				follow_file = true,
-				git_status = true,
-				git_status_open = false,
-				git_untracked = true,
 				jump = { close = true },
-				tree = true,
-				watch = true,
 				exclude = {
 					".git",
 					".pnpm-store",
