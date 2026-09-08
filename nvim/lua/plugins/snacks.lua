@@ -1,7 +1,10 @@
 vim.pack.add({
+	"https://github.com/nvim-mini/mini.icons",
 	"https://github.com/folke/snacks.nvim",
-	"https://github.com/nvim-tree/nvim-web-devicons",
 })
+
+require("mini.icons").setup({})
+require("mini.icons").mock_nvim_web_devicons()
 
 require("snacks").setup({
 	bigfile = {},
