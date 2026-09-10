@@ -83,7 +83,6 @@ in
     ];
     prefix = "C-a";
     extraConfig = ''
-      setw -g xterm-keys on
       set -s escape-time 10                     # faster command sequences
       set -sg repeat-time 600                   # increase repeat timeout
       set -s focus-events on
@@ -189,6 +188,10 @@ in
       set -g allow-passthrough on
       set -ga update-environment TERM
       set -ga update-environment TERM_PROGRAM
+
+      set -g extended-keys on
+      set -g extended-keys-format csi-u
+      set -as terminal-features ',xterm*:extkeys'
     '';
   };
 }
