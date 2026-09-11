@@ -6,7 +6,7 @@ require("lualine").setup({
 	},
 	sections = {
 		lualine_a = { "mode" },
-		lualine_b = { { "b:gitsigns_head", icon = "" } },
+		lualine_b = { "branch" },
 		lualine_c = {
             -- stylua: ignore
 			{
