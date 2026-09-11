@@ -28,8 +28,8 @@ require("conform").setup({
 		-- You can use 'stop_after_first' to run the first available formatter from the list
 		lua = { "stylua" },
 		python = { "ruff_fix", "ruff_format", "ruff_organize_imports" },
-		typescript = { "oxfmt" },
-		typescriptreact = { "oxfmt" },
+		typescript = { "prettier", "oxfmt", stop_after_first = true },
+		typescriptreact = { "prettier", "oxfmt", stop_after_first = true },
 		scala = { "scalafmt" }, -- install scalafmt outside of mason
 		nix = { "nixfmt" },
 		markdown = { "prettier", "markdownlint-cli2", "markdown-toc" },
