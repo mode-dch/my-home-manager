@@ -34,6 +34,14 @@ require("conform").setup({
 		nix = { "nixfmt" },
 		markdown = { "prettier", "markdownlint-cli2", "markdown-toc" },
 	},
+	formatters = {
+		prettier = {
+			require_cwd = true,
+		},
+		oxfmt = {
+			require_cwd = true,
+		},
+	},
 })
 
 vim.keymap.set({ "n", "v" }, "<leader>cf", function()
