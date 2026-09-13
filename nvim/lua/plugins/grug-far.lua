@@ -2,9 +2,7 @@ vim.pack.add({
 	"https://github.com/MagicDuck/grug-far.nvim",
 })
 
-require("grug-far").setup({
-	headerMaxWidth = 80,
-})
+require("grug-far").setup({})
 
 vim.keymap.set({ "n", "v", "x" }, "<leader>sr", function()
 	local grug = require("grug-far")
