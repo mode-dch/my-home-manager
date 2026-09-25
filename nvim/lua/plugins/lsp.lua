@@ -49,13 +49,11 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
 ---@type table<string, vim.lsp.Config>
 local servers = {
-	pyright = {
-		capabilities = {
-			textDocument = {
-				publishDiagnostics = {
-					tagSupport = {
-						valueSet = { 2 },
-					},
+	pyrefly = {
+		settings = {
+			python = {
+				pyrefly = {
+					displayTypeErrors = "force-on",
 				},
 			},
 		},
