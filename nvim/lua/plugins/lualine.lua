@@ -9,11 +9,6 @@ require("lualine").setup({
 		lualine_b = { "branch" },
 		lualine_c = {
             -- stylua: ignore
-			{
-				"project", format = "name", no_project = nil, separator = " ", enclose_pair = nil,
-                color = function() return { fg = Snacks.util.color("Directory") } end
-            },
-            -- stylua: ignore
 			{ "diagnostics", symbols = { error = " ", warn = " ", info = " ", hint = " " } },
 			{ "filetype", icon_only = true, separator = "", padding = { left = 1, right = 0 } },
             -- stylua: ignore

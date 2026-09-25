@@ -35,7 +35,6 @@ require("plugins.nvim-dap")
 require("plugins.neotest")
 require("plugins.diffview")
 require("plugins.gitsigns")
-require("plugins.project")
 require("plugins.bufferline")
 require("plugins.lualine")
 
