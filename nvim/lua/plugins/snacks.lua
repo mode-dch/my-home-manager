@@ -82,6 +82,9 @@ require("snacks").setup({
 			explorer = {
 				auto_close = true,
 				jump = { close = true },
+				layout = {
+					position = "float",
+				},
 				exclude = {
 					".git",
 					".pnpm-store",
