@@ -79,7 +79,6 @@ local servers = {
 			fixKind = "all",
 		},
 	},
-	metals = {}, -- install metals outside of mason
 	nil_ls = {},
 	marksman = {},
 	-- Special Lua Config, as recommended by neovim help docs

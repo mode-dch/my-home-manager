@@ -46,7 +46,7 @@ dap.adapters["pwa-node"] = node_adapter
 local skip_files = { "<node_internals>/**", "node_modules/**" }
 local source_maps = { "${workspaceFolder}/**", "!**/node_modules/**" }
 
-dap.configurations["typescript"] = {
+dap.configurations.typescript = {
 	{
 		type = "pwa-node",
 		request = "attach",
@@ -57,6 +57,27 @@ dap.configurations["typescript"] = {
 		runtimeExecutable = "tsx",
 		skipFiles = skip_files,
 		resolveSourceMapLocations = source_maps,
+	},
+}
+
+dap.configurations.scala = {
+	{
+		type = "scala",
+		request = "launch",
+		name = "Run",
+		metals = {
+			runType = "run",
+		},
+	},
+	{
+		type = "scala",
+		request = "attach",
+		name = "Attach to Localhost",
+		hostName = "localhost",
+		port = 5005,
+		buildTarget = function()
+			return vim.fn.input("Build target: ", vim.fs.basename(vim.fn.getcwd()))
+		end,
 	},
 }
 
