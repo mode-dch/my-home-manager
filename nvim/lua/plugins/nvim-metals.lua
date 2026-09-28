@@ -38,13 +38,9 @@ vim.api.nvim_create_autocmd("FileType", {
 	pattern = { "scala", "sbt", "java" },
 	callback = function()
 		require("metals").initialize_or_attach(metals_config)
+    -- stylua: ignore start
+    require("which-key").add({"<leader>m", group = "metals" })
+    vim.keymap.set("n", "<leader>me", function() require("metals").commands() end, { desc = "Metals commands" })
+		-- stylua: ignore end
 	end,
 })
-
--- stylua: ignore start
-require("which-key").add({"<leader>m", group = "metals" })
-
-vim.keymap.set("n", "<leader>me", function() require("metals").commands() end, { desc = "Metals commands" })
-vim.keymap.set("n", "<leader>mc", function() require("metals").compile_cascade() end, { desc = "Metals compile cascade" })
-vim.keymap.set("n", "<leader>mh", function() require("metals").hover_worksheet() end, { desc = "Metals hover worksheet" })
--- stylua: ignore end
